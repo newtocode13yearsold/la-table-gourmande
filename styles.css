@@ -82,7 +82,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; }
 .hero {
   position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;
   text-align: center; color: var(--white);
-  background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1900&q=80') center/cover no-repeat fixed;
+  background: url('images/hero.jpg') center/cover no-repeat fixed;
 }
 .hero__overlay { position: absolute; inset: 0; background: linear-gradient(rgba(30,22,14,0.55), rgba(30,22,14,0.68)); }
 .hero__content { position: relative; z-index: 2; max-width: 760px; padding: 0 1.5rem; }
