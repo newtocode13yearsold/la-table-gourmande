@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Table Gourmande — Restaurant à Compiègne | Cuisine maison & terroir picard</title>
+  <meta name="description" content="La Table Gourmande, restaurant de cuisine française maison au cœur de Compiègne. Produits frais, locaux et de saison. Spécialités picardes, foie gras, ris de veau. Réservez au 03 44 37 08 28." />
+  <meta name="keywords" content="restaurant Compiègne, cuisine française, La Table Gourmande, spécialités picardes, restaurant gastronomique Compiègne, déjeuner Compiègne, foie gras, ris de veau" />
+  <meta name="author" content="La Table Gourmande" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / réseaux sociaux -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="La Table Gourmande — Restaurant à Compiègne" />
+  <meta property="og:description" content="Cuisine française maison, produits frais et de saison. 4,8★ — l'un des restaurants les mieux notés de Compiègne." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Données structurées Google (rich results : avis, horaires, adresse) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "La Table Gourmande",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80",
+    "servesCuisine": ["Française", "Picarde", "Cuisine maison"],
+    "priceRange": "€€",
+    "telephone": "+33344370828",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11 Rue du Général Leclerc",
+      "addressLocality": "Compiègne",
+      "postalCode": "60200",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.4179,
+      "longitude": 2.8261
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "334"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "12:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "19:00", "closes": "21:30" }
+    ],
+    "acceptsReservations": "True",
+    "url": ""
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Barre de navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#accueil" class="nav__brand">
+        <span class="nav__brand-main">La Table Gourmande</span>
+        <span class="nav__brand-sub">Compiègne</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#accueil">Accueil</a>
+        <a href="#histoire">La maison</a>
+        <a href="#carte">La carte</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#avis">Avis</a>
+        <a href="#infos">Infos &amp; horaires</a>
+        <a href="#reservation" class="nav__cta">Réserver</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Restaurant · Cuisine maison · Compiègne</p>
+      <h1 class="hero__title">La Table Gourmande</h1>
+      <p class="hero__tagline">Une cuisine française sincère, des produits frais et de saison,<br />au cœur de Compiègne.</p>
+      <div class="hero__rating">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span>4,8 / 5 — l'un des restaurants les mieux notés de Compiègne</span>
+      </div>
+      <div class="hero__actions">
+        <a href="#reservation" class="btn btn--primary">Réserver une table</a>
+        <a href="#carte" class="btn btn--ghost">Découvrir la carte</a>
+      </div>
+    </div>
+    <a href="#histoire" class="hero__scroll" aria-label="Descendre">▾</a>
+  </section>
+
+  <!-- ===== Bandeau pratique ===== -->
+  <section class="strip">
+    <div class="strip__item"><span class="strip__label">Adresse</span><span>11 Rue du Général Leclerc, 60200 Compiègne</span></div>
+    <div class="strip__item"><span class="strip__label">Réservations</span><a href="tel:+33344370828">03 44 37 08 28</a></div>
+    <div class="strip__item"><span class="strip__label">Service</span><span>Sur place &amp; à emporter</span></div>
+  </section>
+
+  <!-- ===== La maison ===== -->
+  <section class="section histoire" id="histoire">
+    <div class="histoire__grid">
+      <div class="histoire__media">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80" alt="Salle chaleureuse du restaurant" loading="lazy" />
+      </div>
+      <div class="histoire__text">
+        <p class="eyebrow">La maison</p>
+        <h2>Le goût du fait-maison</h2>
+        <p>Au cœur de Compiègne, <strong>La Table Gourmande</strong> cultive une idée simple : une cuisine française généreuse, préparée chaque jour à partir de produits frais, locaux et de saison.</p>
+        <p>Les assiettes s'inspirent du terroir picard et des classiques de la gastronomie française, dans un cadre convivial et soigné. Un déjeuner entre collègues, un repas en famille ou un moment à deux : on s'y sent comme à la maison.</p>
+        <ul class="histoire__points">
+          <li><span>🌿</span> Produits frais &amp; de saison</li>
+          <li><span>👨‍🍳</span> Tout fait maison</li>
+          <li><span>📍</span> Producteurs locaux</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== La carte ===== -->
+  <section class="section carte" id="carte">
+    <div class="section__head">
+      <p class="eyebrow">À table</p>
+      <h2>La carte</h2>
+      <p class="section__lead">Une carte courte qui change au fil des saisons. Voici quelques-unes de nos signatures. Comptez environ 20 à 30 € par personne.</p>
+    </div>
+
+    <div class="menu">
+      <div class="menu__col">
+        <h3 class="menu__cat">Entrées</h3>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Parfait de foie gras de canard</span><span class="dots"></span><span class="menu__price">12 €</span></div><p class="menu__desc">Mousseline de navet doux, pain d'épices toasté.</p></div>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Œuf parfait &amp; champignons</span><span class="dots"></span><span class="menu__price">10 €</span></div><p class="menu__desc">Crème de comté, lard fumé, herbes fraîches.</p></div>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Salade gourmande de saison</span><span class="dots"></span><span class="menu__price">11 €</span></div><p class="menu__desc">Produits du marché, vinaigrette maison.</p></div>
+      </div>
+
+      <div class="menu__col">
+        <h3 class="menu__cat">Plats</h3>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Cocotte picarde</span><span class="dots"></span><span class="menu__price">19 €</span></div><p class="menu__desc">Endives, poitrine fumée, pommes de terre, Maroilles, pain d'épices.</p></div>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Ris de veau croustillant</span><span class="dots"></span><span class="menu__price">24 €</span></div><p class="menu__desc">Jus corsé, légumes glacés de saison.</p></div>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Pièce de bœuf maturée</span><span class="dots"></span><span class="menu__price">23 €</span></div><p class="menu__desc">Beurre maître d'hôtel, pommes grenaille.</p></div>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Poisson du moment</span><span class="dots"></span><span class="menu__price">21 €</span></div><p class="menu__desc">Selon l'arrivage, garniture du jour.</p></div>
+      </div>
+
+      <div class="menu__col">
+        <h3 class="menu__cat">Desserts</h3>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Pain perdu façon picarde</span><span class="dots"></span><span class="menu__price">8 €</span></div><p class="menu__desc">Caramel beurre salé, glace vanille.</p></div>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Cheesecake maison</span><span class="dots"></span><span class="menu__price">8 €</span></div><p class="menu__desc">Coulis de fruits rouges de saison.</p></div>
+        <div class="menu__item"><div class="menu__line"><span class="menu__name">Café gourmand</span><span class="dots"></span><span class="menu__price">9 €</span></div><p class="menu__desc">Assortiment de mignardises maison.</p></div>
+      </div>
+    </div>
+
+    <div class="carte__note">
+      <p>Formule déjeuner du midi : <strong>entrée + plat + dessert</strong>. Menu mis à jour selon le marché — n'hésitez pas à nous appeler pour le menu du jour.</p>
+      <a href="tel:+33344370828" class="btn btn--primary">Appeler le restaurant</a>
+    </div>
+  </section>
+
+  <!-- ===== Galerie ===== -->
+  <section class="section galerie" id="galerie">
+    <div class="section__head">
+      <p class="eyebrow">En images</p>
+      <h2>Galerie</h2>
+    </div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Plat de viande dressé" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80" alt="Intérieur du restaurant" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80" alt="Assiette gastronomique" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=700&q=80" alt="Dessert gourmand" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=700&q=80" alt="Foie gras et pain d'épices" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=80" alt="Poisson cuisiné" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ===== Avis ===== -->
+  <section class="section avis" id="avis">
+    <div class="section__head">
+      <p class="eyebrow">Ils nous ont aimés</p>
+      <h2>Avis clients</h2>
+      <div class="avis__score"><span class="stars">★★★★★</span> <strong>4,8 / 5</strong> · 334 avis Google</div>
+    </div>
+    <div class="reviews">
+      <blockquote class="review">
+        <span class="stars">★★★★★</span>
+        <p>« Très bien reçus, la cuisine est délicieuse — mention spéciale au gâteau picard façon pain perdu, excellent ! »</p>
+        <footer>— Cliente Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="stars">★★★★★</span>
+        <p>« Cadre agréable, cuisine faite maison et très bons plats. Une carte simple et efficace. »</p>
+        <footer>— Client Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="stars">★★★★★</span>
+        <p>« Service rapide et souriant. Un très bon repas, on reviendra ! »</p>
+        <footer>— Client Tripadvisor</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== Infos & horaires + carte ===== -->
+  <section class="section infos" id="infos">
+    <div class="infos__grid">
+      <div class="infos__block">
+        <p class="eyebrow">Pratique</p>
+        <h2>Infos &amp; horaires</h2>
+
+        <div class="infos__row">
+          <h3>Horaires d'ouverture</h3>
+          <table class="hours">
+            <tr><td>Lundi</td><td class="closed">Fermé</td></tr>
+            <tr><td>Mardi</td><td>12h00 – 14h00</td></tr>
+            <tr><td>Mercredi</td><td>12h00 – 14h00</td></tr>
+            <tr><td>Jeudi</td><td>12h00 – 14h00</td></tr>
+            <tr><td>Vendredi</td><td>12h00 – 14h00</td></tr>
+            <tr><td>Samedi</td><td>12h00 – 14h30 · 19h00 – 21h30</td></tr>
+            <tr><td>Dimanche</td><td class="closed">Fermé</td></tr>
+          </table>
+          <p class="infos__hint">Les horaires peuvent varier selon les jours fériés — appelez-nous pour confirmer.</p>
+        </div>
+
+        <div class="infos__row">
+          <h3>Nous trouver</h3>
+          <p><a href="https://maps.google.com/?q=La+Table+Gourmande+11+Rue+du+Général+Leclerc+Compiègne" target="_blank" rel="noopener">11 Rue du Général Leclerc, 60200 Compiègne</a></p>
+          <p>Téléphone : <a href="tel:+33344370828">03 44 37 08 28</a></p>
+          <p>Service sur place &amp; à emporter</p>
+        </div>
+      </div>
+
+      <div class="infos__map">
+        <iframe
+          title="Carte — La Table Gourmande, Compiègne"
+          src="https://www.google.com/maps?q=11%20Rue%20du%20G%C3%A9n%C3%A9ral%20Leclerc%2C%2060200%20Compi%C3%A8gne&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Réservation ===== -->
+  <section class="section reservation" id="reservation">
+    <div class="reservation__inner">
+      <div class="section__head">
+        <p class="eyebrow">Réserver</p>
+        <h2>Réservez votre table</h2>
+        <p class="section__lead">Remplissez le formulaire ci-dessous : votre demande nous est envoyée directement. Pour une réservation immédiate, appelez le <a href="tel:+33344370828">03 44 37 08 28</a>.</p>
+      </div>
+
+      <form class="form" id="reservationForm" novalidate>
+        <div class="form__grid">
+          <label>Nom complet*
+            <input type="text" name="nom" required placeholder="Votre nom" />
+          </label>
+          <label>Téléphone*
+            <input type="tel" name="tel" required placeholder="06 12 34 56 78" />
+          </label>
+          <label>E-mail
+            <input type="email" name="email" placeholder="vous@exemple.fr" />
+          </label>
+          <label>Nombre de personnes*
+            <input type="number" name="couverts" min="1" max="30" value="2" required />
+          </label>
+          <label>Date*
+            <input type="date" name="date" required />
+          </label>
+          <label>Heure*
+            <input type="time" name="heure" required />
+          </label>
+        </div>
+        <label>Message (allergies, occasion…)
+          <textarea name="message" rows="3" placeholder="Une remarque pour nous ?"></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande de réservation</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Pied de page ===== -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__brand">La Table Gourmande</p>
+        <p>Cuisine française maison — Compiègne</p>
+      </div>
+      <div>
+        <p class="footer__title">Contact</p>
+        <p>11 Rue du Général Leclerc<br />60200 Compiègne</p>
+        <p><a href="tel:+33344370828">03 44 37 08 28</a></p>
+      </div>
+      <div>
+        <p class="footer__title">Horaires</p>
+        <p>Mar – Ven : 12h – 14h<br />Sam : 12h – 14h30 · 19h – 21h30<br />Dim &amp; Lun : fermé</p>
+      </div>
+      <div>
+        <p class="footer__title">Liens</p>
+        <p><a href="#carte">La carte</a><br /><a href="#reservation">Réserver</a><br /><a href="https://maps.google.com/?q=La+Table+Gourmande+Compiègne" target="_blank" rel="noopener">Plan d'accès</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> La Table Gourmande · Compiègne. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <a href="tel:+33344370828" class="fab" aria-label="Appeler le restaurant">📞</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
