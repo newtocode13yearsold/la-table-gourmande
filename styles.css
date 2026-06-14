@@ -117,8 +117,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; }
 .histoire__text p { color: var(--ink-soft); margin-bottom: 1rem; }
 .histoire__text strong { color: var(--ink); font-weight: 500; }
 .histoire__points { list-style: none; display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.6rem; }
-.histoire__points li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.92rem; font-weight: 400; }
-.histoire__points span { font-size: 1.2rem; }
+.histoire__points li { display: flex; align-items: center; gap: 0.6rem; font-size: 0.92rem; font-weight: 400; }
+.histoire__points svg { width: 22px; height: 22px; color: var(--gold-dark); flex-shrink: 0; }
 
 /* ===== La carte ===== */
 .carte { background: var(--bg-warm); max-width: none; }
@@ -189,6 +189,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; }
 .reservation .section__lead a { color: var(--gold); }
 .form { background: var(--bg); padding: 2.4rem; border-radius: var(--radius); }
 .form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-bottom: 1.1rem; }
+.form__full { grid-column: 1 / -1; }
 .form label { display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 500; }
 .form input, .form textarea {
   font-family: var(--sans); font-size: 0.95rem; padding: 0.7rem 0.85rem; border: 1px solid var(--line);
@@ -243,7 +244,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; }
   .nav__burger { display: flex; z-index: 101; }
   .hero { background-attachment: scroll; }
   .reservation { background-attachment: scroll; }
-  .menu, .reviews, .gallery, .form__grid { grid-template-columns: 1fr; }
+  .menu, .reviews, .gallery { grid-template-columns: 1fr; }
+  .form { padding: 1.6rem; }
+  .form__grid { gap: 0.8rem; }
   .section { padding: 4rem 1.5rem; }
   .strip { gap: 0.8rem; flex-direction: column; }
   .fab { display: flex; }
