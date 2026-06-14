@@ -190,8 +190,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; }
 .form { background: var(--bg); padding: 2.4rem; border-radius: var(--radius); }
 .form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-bottom: 1.1rem; }
 .form__full { grid-column: 1 / -1; }
-.form label { display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 500; }
+.form label { display: flex; flex-direction: column; gap: 0.4rem; min-width: 0; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 500; }
 .form input, .form textarea {
+  width: 100%; box-sizing: border-box;
   font-family: var(--sans); font-size: 0.95rem; padding: 0.7rem 0.85rem; border: 1px solid var(--line);
   border-radius: var(--radius); background: var(--white); color: var(--ink); text-transform: none; letter-spacing: 0; font-weight: 300;
 }

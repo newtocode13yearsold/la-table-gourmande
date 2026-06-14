@@ -88,7 +88,6 @@
     var data = {
       nom: form.nom.value.trim(),
       tel: form.tel.value.trim(),
-      email: form.email.value.trim(),
       couverts: form.couverts.value,
       date: form.date.value,
       heure: form.heure.value,
@@ -120,7 +119,6 @@
         'Nouvelle demande de réservation :\n\n' +
         'Nom : ' + data.nom + '\n' +
         'Téléphone : ' + data.tel + '\n' +
-        'E-mail : ' + (data.email || '—') + '\n' +
         'Personnes : ' + data.couverts + '\n' +
         'Date : ' + data.date + '\n' +
         'Heure : ' + data.heure + '\n' +
