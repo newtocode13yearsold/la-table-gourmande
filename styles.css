@@ -179,7 +179,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; }
 /* ===== Réservation ===== */
 .reservation {
   max-width: none;
-  background: url('https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=1900&q=80') center/cover fixed;
+  background: url('images/reservation.jpg') center/cover fixed;
   position: relative;
 }
 .reservation::before { content: ''; position: absolute; inset: 0; background: rgba(28,21,13,0.78); }
