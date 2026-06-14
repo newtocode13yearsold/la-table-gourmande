@@ -142,9 +142,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; }
 .carte__note strong { color: var(--ink); font-weight: 500; }
 
 /* ===== Galerie ===== */
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 .gallery img {
-  width: 100%; height: 260px; object-fit: cover; border-radius: var(--radius);
+  width: 100%; height: 340px; object-fit: cover; border-radius: var(--radius);
   transition: transform 0.4s ease, filter 0.4s ease; filter: saturate(0.95);
 }
 .gallery img:hover { transform: scale(1.03); filter: saturate(1.1); }
