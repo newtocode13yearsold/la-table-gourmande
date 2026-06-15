@@ -31,7 +31,7 @@ Les informations ci-dessous ont été reconstituées à partir d'infos publiques
 - **Horaires** : indicatifs, basés sur le fonctionnement de la marque O'Brunch — à confirmer pour le site de Compiègne.
 - **Carte & prix** : reconstitués à partir de la carte O'Brunch — à valider (la carte de Compiègne peut différer de celle de Creil).
 - **Téléphone** : non renseigné publiquement au moment de la création — à ajouter (bandeau, infos, pied de page, données structurées).
-- **Photos** : les visuels sont des images d'illustration libres de droit (Unsplash), **ce ne sont pas les vraies photos de l'établissement**. Remplacez les URL `https://images.unsplash.com/...` par les photos réelles (placez-les dans un dossier `images/`).
+- **Photos** : les visuels (dossier `images/`) proviennent de la fiche Google de l'établissement. Pensez à conserver l'accord du restaurant pour leur utilisation, ou à les remplacer par des photos officielles haute définition.
 
 ## Personnaliser le contenu
 
