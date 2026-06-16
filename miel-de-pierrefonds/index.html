@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Miel de [NOM] — Miel artisanal de Pierrefonds (Oise) | Récolte père &amp; fils</title>
+  <meta name="description" content="Le Miel de [NOM] : un miel artisanal récolté à Pierrefonds, dans l'Oise, par un père et son fils. Deux ruches, une récolte limitée, 100 % naturel et non chauffé. Commandez votre pot." />
+  <meta name="keywords" content="miel Pierrefonds, miel artisanal Oise, miel local, miel naturel, apiculteur Pierrefonds, miel récolte familiale, miel non chauffé" />
+  <meta name="author" content="Le Miel de [NOM]" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon (SVG inline : pot de miel, évite l'erreur 404 favicon.ico) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23b5731a'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle'%3E%F0%9F%8D%AF%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph / réseaux sociaux -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Le Miel de [NOM] — Miel artisanal de Pierrefonds" />
+  <meta property="og:description" content="Un miel artisanal récolté à Pierrefonds par un père et son fils. Deux ruches, une récolte limitée." />
+  <meta property="og:locale" content="fr_FR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Données structurées Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Le Miel de [NOM]",
+    "description": "Miel artisanal récolté à Pierrefonds (Oise) par un père et son fils.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pierrefonds",
+      "postalCode": "60350",
+      "addressRegion": "Oise",
+      "addressCountry": "FR"
+    },
+    "areaServed": "Pierrefonds et alentours (Oise)",
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Product", "name": "Miel artisanal de Pierrefonds" }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Barre de navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#accueil" class="nav__brand">
+        <span class="nav__brand-main">Le Miel de [NOM]</span>
+        <span class="nav__brand-sub">Pierrefonds · Oise</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#accueil">Accueil</a>
+        <a href="#ruches">Nos ruches</a>
+        <a href="#miels">Nos miels</a>
+        <a href="#pourquoi">Pourquoi nous</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#commander" class="nav__cta">Commander</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Miel artisanal · Récolté à Pierrefonds</p>
+      <h1 class="hero__title">Le Miel de [NOM]</h1>
+      <p class="hero__tagline">Un miel naturel, récolté à la main par un père et son fils,<br />au cœur de l'Oise.</p>
+      <div class="hero__rating">
+        <span class="stars" aria-hidden="true">🐝</span>
+        <span>Deux ruches · une récolte limitée · 100 % naturel</span>
+      </div>
+      <div class="hero__actions">
+        <a href="#commander" class="btn btn--primary">Commander un pot</a>
+        <a href="#ruches" class="btn btn--ghost">Notre histoire</a>
+      </div>
+    </div>
+    <a href="#ruches" class="hero__scroll" aria-label="Descendre">▾</a>
+  </section>
+
+  <!-- ===== Bandeau pratique ===== -->
+  <section class="strip">
+    <div class="strip__item"><span class="strip__label">Récolte</span><span>Pierrefonds, Oise (60)</span></div>
+    <div class="strip__item"><span class="strip__label">Commandes</span><a href="tel:+33000000000">[TÉLÉPHONE]</a></div>
+    <div class="strip__item"><span class="strip__label">Vente</span><span>En direct du producteur</span></div>
+  </section>
+
+  <!-- ===== Nos ruches (histoire) ===== -->
+  <section class="section histoire" id="ruches">
+    <div class="histoire__grid">
+      <div class="histoire__media">
+        <img src="images/ruches.jpg" alt="Nos deux ruches au cœur de Pierrefonds" loading="lazy" />
+      </div>
+      <div class="histoire__text">
+        <p class="eyebrow">Nos ruches</p>
+        <h2>Une histoire de père et de fils</h2>
+        <p>Tout a commencé par une passion partagée et <strong>deux ruches</strong> installées à Pierrefonds, dans l'Oise. Mon père et moi prenons soin de nos abeilles au fil des saisons, simplement, sans précipitation.</p>
+        <p>Chaque pot est le fruit de notre travail à tous les deux : de la ruche à l'extraction, tout est fait à la main. Notre récolte est forcément limitée — et c'est ce qui en fait sa valeur.</p>
+        <ul class="histoire__points">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Z"/><path d="M8 12h8M8 9h8M8 15h8"/></svg>
+            Récolte familiale
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Produit à Pierrefonds
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
+            100 % naturel
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Nos miels (produits) ===== -->
+  <section class="section carte" id="miels">
+    <div class="section__head">
+      <p class="eyebrow">Notre récolte</p>
+      <h2>Nos miels</h2>
+      <p class="section__lead">Un miel de nos deux ruches, mis en pot juste après l'extraction. Récolte limitée — les quantités varient selon les saisons.</p>
+    </div>
+
+    <div class="produits">
+      <article class="produit">
+        <div class="produit__img" data-emoji="🍯"></div>
+        <div class="produit__body">
+          <h3 class="produit__name">Miel toutes fleurs</h3>
+          <p class="produit__desc">Notre miel de l'année, doux et parfumé, issu des fleurs de Pierrefonds et des alentours.</p>
+          <div class="produit__foot"><span class="produit__size">Pot de 500 g</span><span class="produit__price">[PRIX] €</span></div>
+        </div>
+      </article>
+
+      <article class="produit">
+        <div class="produit__img" data-emoji="🍯"></div>
+        <div class="produit__body">
+          <h3 class="produit__name">Miel toutes fleurs</h3>
+          <p class="produit__desc">Le même miel, en petit format — parfait pour découvrir ou pour offrir.</p>
+          <div class="produit__foot"><span class="produit__size">Pot de 250 g</span><span class="produit__price">[PRIX] €</span></div>
+        </div>
+      </article>
+
+      <article class="produit">
+        <div class="produit__img" data-emoji="🎁"></div>
+        <div class="produit__body">
+          <h3 class="produit__name">Coffret cadeau</h3>
+          <p class="produit__desc">Quelques pots assemblés dans un joli coffret — une idée de cadeau 100 % local.</p>
+          <div class="produit__foot"><span class="produit__size">Sur demande</span><span class="produit__price">Nous contacter</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="carte__note">
+      <p>Les prix et les formats peuvent évoluer selon la récolte. <strong>Appelez-nous</strong> ou remplissez le formulaire pour connaître les disponibilités du moment.</p>
+      <a href="#commander" class="btn btn--primary">Commander un pot</a>
+    </div>
+  </section>
+
+  <!-- ===== Pourquoi notre miel ===== -->
+  <section class="section pourquoi" id="pourquoi">
+    <div class="section__head">
+      <p class="eyebrow">Pourquoi notre miel</p>
+      <h2>Du vrai miel, simplement</h2>
+    </div>
+    <div class="atouts">
+      <div class="atout">
+        <span class="atout__icon">🐝</span>
+        <h3>Récolté à la main</h3>
+        <p>De la ruche au pot, tout est fait par nous deux, sans intermédiaire.</p>
+      </div>
+      <div class="atout">
+        <span class="atout__icon">🌼</span>
+        <h3>100 % local</h3>
+        <p>Nos abeilles butinent les fleurs de Pierrefonds et de l'Oise.</p>
+      </div>
+      <div class="atout">
+        <span class="atout__icon">🧊</span>
+        <h3>Non chauffé</h3>
+        <p>Un miel brut, jamais surchauffé, qui garde tout son goût et ses bienfaits.</p>
+      </div>
+      <div class="atout">
+        <span class="atout__icon">🤝</span>
+        <h3>En direct de nous</h3>
+        <p>Vous achetez directement aux producteurs, en toute confiance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Galerie ===== -->
+  <section class="section galerie" id="galerie">
+    <div class="section__head">
+      <p class="eyebrow">En images</p>
+      <h2>Galerie</h2>
+      <p class="section__lead">Vos photos viendront ici : les ruches, la récolte, les pots… Envoyez-les-moi et je les ajoute.</p>
+    </div>
+    <div class="gallery">
+      <img src="images/g1.jpg" alt="Nos ruches à Pierrefonds" loading="lazy" />
+      <img src="images/g2.jpg" alt="La récolte du miel" loading="lazy" />
+      <img src="images/g3.jpg" alt="Un cadre rempli de miel" loading="lazy" />
+      <img src="images/g4.jpg" alt="Nos pots de miel artisanal" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ===== Commander ===== -->
+  <section class="section commander" id="commander">
+    <div class="commander__inner">
+      <div class="section__head">
+        <p class="eyebrow">Commander</p>
+        <h2>Réservez vos pots</h2>
+        <p class="section__lead">Remplissez le formulaire : votre demande nous est envoyée directement. Pour aller plus vite, appelez-nous au <a href="tel:+33000000000">[TÉLÉPHONE]</a>.</p>
+      </div>
+
+      <form class="form" id="commandeForm" novalidate>
+        <div class="form__grid">
+          <label class="form__full">Nom complet*
+            <input type="text" name="nom" required placeholder="Votre nom" />
+          </label>
+          <label>Téléphone*
+            <input type="tel" name="tel" required placeholder="06 12 34 56 78" />
+          </label>
+          <label>E-mail
+            <input type="email" name="email" placeholder="vous@exemple.fr" />
+          </label>
+          <label>Produit souhaité
+            <select name="produit">
+              <option>Miel toutes fleurs — 500 g</option>
+              <option>Miel toutes fleurs — 250 g</option>
+              <option>Coffret cadeau</option>
+              <option>Je ne sais pas encore</option>
+            </select>
+          </label>
+          <label>Quantité
+            <input type="number" name="quantite" min="1" max="50" value="1" />
+          </label>
+        </div>
+        <label>Message (retrait, question…)
+          <textarea name="message" rows="3" placeholder="Une remarque pour nous ?"></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Pied de page ===== -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__brand">Le Miel de [NOM]</p>
+        <p>Miel artisanal — Pierrefonds, Oise</p>
+      </div>
+      <div>
+        <p class="footer__title">Contact</p>
+        <p>Pierrefonds (60350)<br />Oise · Hauts-de-France</p>
+        <p><a href="tel:+33000000000">[TÉLÉPHONE]</a></p>
+      </div>
+      <div>
+        <p class="footer__title">Nos miels</p>
+        <p><a href="#miels">Voir la récolte</a><br /><a href="#commander">Commander</a><br /><a href="#ruches">Notre histoire</a></p>
+      </div>
+      <div>
+        <p class="footer__title">À savoir</p>
+        <p>Récolte limitée<br />Vente en direct<br />100 % naturel</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Le Miel de [NOM] · Pierrefonds. Tous droits réservés.</p>
+      <p class="footer__credit">Site réalisé par <a href="https://portfolio.ciril8596.workers.dev/" target="_blank" rel="noopener">Thomas</a></p>
+    </div>
+  </footer>
+
+  <a href="tel:+33000000000" class="fab" aria-label="Nous appeler">📞</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

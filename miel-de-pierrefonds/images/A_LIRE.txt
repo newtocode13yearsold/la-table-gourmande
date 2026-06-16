@@ -1,0 +1,27 @@
+PHOTOS À AJOUTER ICI — Le Miel de [NOM]
+=========================================
+
+Déposez vos photos dans ce dossier (images/) avec EXACTEMENT ces noms.
+Tant qu'une photo manque, le site affiche un joli dégradé "miel" à la place
+(rien n'est cassé), donc vous pouvez les ajouter au fur et à mesure.
+
+Photos attendues :
+  - hero.jpg        → grande photo d'accueil (ruches, paysage, ou pots) — format paysage, large
+  - ruches.jpg      → vos deux ruches / vous deux au rucher (section "Nos ruches")
+  - commander.jpg   → photo de fond pour la section "Commander" (récolte, pots…)
+  - g1.jpg          → galerie 1 (ex. les ruches)
+  - g2.jpg          → galerie 2 (ex. la récolte)
+  - g3.jpg          → galerie 3 (ex. un cadre de miel)
+  - g4.jpg          → galerie 4 (ex. les pots de miel)
+
+Conseil : des photos un peu grandes (au moins 1200 px de large) rendent mieux.
+
+-----------------------------------------------------------------
+À REMPLACER DANS LE SITE (cherchez ces mots entre crochets) :
+  [NOM]        → votre nom de famille (ex. "Dupont")  → dans index.html, styles.css, script.js
+  [TÉLÉPHONE]  → votre numéro affiché (ex. "06 12 34 56 78") → dans index.html
+  tel:+33000000000 → votre numéro au format international (ex. tel:+33612345678) → dans index.html
+  [PRIX]       → le prix de chaque pot → dans index.html (section "Nos miels")
+
+Pour recevoir les commandes par e-mail, voir les instructions en haut de script.js.
+Dites-moi simplement le nom, le numéro et les prix et je les mets pour vous.

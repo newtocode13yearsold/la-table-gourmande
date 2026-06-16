@@ -1,0 +1,258 @@
+/* ===== Le Miel de [NOM] — feuille de style ===== */
+:root {
+  --bg:        #fdf8ef;
+  --bg-warm:   #f6ecd8;
+  --ink:       #2e2410;
+  --ink-soft:  #6e5d3e;
+  --gold:      #c98a1e;
+  --gold-dark: #9c6710;
+  --green:     #5a6a3a;
+  --line:      rgba(46,36,16,0.12);
+  --white:     #ffffff;
+  --serif:     'Cormorant Garamond', Georgia, serif;
+  --sans:      'Jost', system-ui, sans-serif;
+  --maxw:      1180px;
+  --radius:    4px;
+  /* Dégradés "miel" servant de fond avant l'ajout des photos */
+  --honey-grad: linear-gradient(135deg, #e8a33a 0%, #c98a1e 45%, #8a5a0f 100%);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.7;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.1; }
+.eyebrow {
+  font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--gold-dark); font-weight: 500; margin-bottom: 0.6rem;
+}
+.stars { color: var(--gold); letter-spacing: 2px; }
+
+/* ===== Boutons ===== */
+.btn {
+  display: inline-block; padding: 0.85rem 1.9rem; border-radius: var(--radius);
+  font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.12em;
+  text-transform: uppercase; font-weight: 500; cursor: pointer;
+  transition: all 0.25s ease; border: 1px solid transparent; text-align: center;
+}
+.btn--primary { background: var(--gold); color: var(--white); }
+.btn--primary:hover { background: var(--gold-dark); transform: translateY(-2px); }
+.btn--ghost { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.6); }
+.btn--ghost:hover { background: rgba(255,255,255,0.12); }
+.btn--full { width: 100%; }
+
+/* ===== Navigation ===== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  padding: 1.1rem 0;
+}
+.nav--scrolled { background: var(--bg); box-shadow: 0 2px 18px rgba(0,0,0,0.07); padding: 0.6rem 0; }
+.nav__inner {
+  max-width: var(--maxw); margin: 0 auto; padding: 0 1.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav__brand { display: flex; flex-direction: column; line-height: 1; }
+.nav__brand-main { font-family: var(--serif); font-size: 1.45rem; font-weight: 600; color: var(--white); }
+.nav__brand-sub { font-size: 0.62rem; letter-spacing: 0.34em; text-transform: uppercase; color: rgba(255,255,255,0.8); margin-top: 3px; }
+.nav--scrolled .nav__brand-main { color: var(--ink); }
+.nav--scrolled .nav__brand-sub { color: var(--gold-dark); }
+.nav__links { display: flex; align-items: center; gap: 1.9rem; }
+.nav__links a { font-size: 0.82rem; letter-spacing: 0.06em; color: var(--white); transition: color 0.2s; }
+.nav__links a:hover { color: var(--gold); }
+.nav--scrolled .nav__links a { color: var(--ink); }
+.nav--scrolled .nav__links a:hover { color: var(--gold-dark); }
+.nav__cta {
+  border: 1px solid currentColor; padding: 0.5rem 1.1rem; border-radius: var(--radius);
+  text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500;
+}
+.nav--scrolled .nav__cta { background: var(--gold); color: var(--white) !important; border-color: var(--gold); }
+.nav__burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.nav__burger span { width: 26px; height: 2px; background: var(--white); transition: 0.3s; }
+.nav--scrolled .nav__burger span { background: var(--ink); }
+
+/* ===== Hero ===== */
+.hero {
+  position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; color: var(--white);
+  /* La photo passe par-dessus le dégradé : si elle manque, le dégradé miel reste. */
+  background: var(--honey-grad);
+}
+.hero::after {
+  content: ''; position: absolute; inset: 0; z-index: 0;
+  background: url('images/hero.jpg') center/cover no-repeat;
+}
+.hero__overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(rgba(40,28,8,0.45), rgba(40,28,8,0.62)); }
+.hero__content { position: relative; z-index: 2; max-width: 760px; padding: 0 1.5rem; }
+.hero__eyebrow { font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.9); margin-bottom: 1.2rem; }
+.hero__title { font-size: clamp(3rem, 9vw, 6rem); font-weight: 600; margin-bottom: 1rem; }
+.hero__tagline { font-family: var(--serif); font-size: clamp(1.25rem, 3vw, 1.75rem); font-weight: 400; color: rgba(255,255,255,0.95); margin-bottom: 1.6rem; }
+.hero__rating { display: flex; align-items: center; justify-content: center; gap: 0.6rem; font-size: 0.92rem; margin-bottom: 2.2rem; flex-wrap: wrap; }
+.hero__rating .stars { font-size: 1.2rem; }
+.hero__actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero__scroll { position: absolute; bottom: 1.6rem; left: 50%; transform: translateX(-50%); z-index: 2; color: var(--white); font-size: 1.6rem; animation: bob 2s infinite; }
+@keyframes bob { 0%,100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 8px); } }
+
+/* ===== Bandeau pratique ===== */
+.strip {
+  background: var(--ink); color: #f3e7cf; display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 0.4rem 3rem; padding: 1.3rem 1.5rem; text-align: center;
+}
+.strip__item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; }
+.strip__label { font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+.strip a:hover { color: var(--gold); }
+
+/* ===== Sections génériques ===== */
+.section { max-width: var(--maxw); margin: 0 auto; padding: 6rem 1.5rem; }
+.section__head { text-align: center; max-width: 640px; margin: 0 auto 3.5rem; }
+.section__head h2 { font-size: clamp(2rem, 5vw, 2.9rem); margin-bottom: 0.8rem; }
+.section__lead { color: var(--ink-soft); font-size: 1.05rem; }
+
+/* ===== Nos ruches (histoire) ===== */
+.histoire__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.histoire__media { border-radius: var(--radius); min-height: 420px; height: 100%; background: var(--honey-grad); overflow: hidden; }
+.histoire__media img { border-radius: var(--radius); width: 100%; height: 100%; object-fit: cover; min-height: 420px; }
+.histoire__text h2 { font-size: clamp(2rem, 5vw, 2.9rem); margin-bottom: 1.2rem; }
+.histoire__text p { color: var(--ink-soft); margin-bottom: 1rem; }
+.histoire__text strong { color: var(--ink); font-weight: 500; }
+.histoire__points { list-style: none; display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.6rem; }
+.histoire__points li { display: flex; align-items: center; gap: 0.6rem; font-size: 0.92rem; font-weight: 400; }
+.histoire__points svg { width: 22px; height: 22px; color: var(--gold-dark); flex-shrink: 0; }
+
+/* ===== Nos miels (produits) ===== */
+.carte { background: var(--bg-warm); max-width: none; }
+.carte > * { max-width: var(--maxw); margin-left: auto; margin-right: auto; }
+.produits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.produit {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; display: flex; flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.produit:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(120,80,10,0.12); }
+.produit__img {
+  height: 200px; background: var(--honey-grad);
+  display: flex; align-items: center; justify-content: center;
+}
+.produit__img::before { content: attr(data-emoji); font-size: 3.4rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+.produit__body { padding: 1.6rem; display: flex; flex-direction: column; flex: 1; }
+.produit__name { font-size: 1.4rem; color: var(--gold-dark); margin-bottom: 0.6rem; }
+.produit__desc { color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 1.2rem; flex: 1; }
+.produit__foot { display: flex; align-items: baseline; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 0.9rem; }
+.produit__size { font-size: 0.85rem; color: var(--ink-soft); letter-spacing: 0.04em; }
+.produit__price { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--gold-dark); }
+.carte__note {
+  margin-top: 3.5rem; text-align: center; background: var(--white); padding: 2.2rem;
+  border-radius: var(--radius); border: 1px solid var(--line);
+}
+.carte__note p { color: var(--ink-soft); margin-bottom: 1.3rem; }
+.carte__note strong { color: var(--ink); font-weight: 500; }
+
+/* ===== Pourquoi notre miel ===== */
+.atouts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.atout {
+  text-align: center; padding: 2rem 1.2rem; background: var(--bg-warm);
+  border-radius: var(--radius); border: 1px solid var(--line);
+}
+.atout__icon { font-size: 2.4rem; display: block; margin-bottom: 0.8rem; }
+.atout h3 { font-size: 1.3rem; color: var(--gold-dark); margin-bottom: 0.5rem; }
+.atout p { font-size: 0.92rem; color: var(--ink-soft); }
+
+/* ===== Galerie ===== */
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.gallery img {
+  width: 100%; height: 340px; object-fit: cover; border-radius: var(--radius);
+  background: var(--honey-grad);
+  transition: transform 0.4s ease, filter 0.4s ease; filter: saturate(0.97);
+}
+.gallery img:hover { transform: scale(1.03); filter: saturate(1.12); }
+
+/* ===== Commander ===== */
+.commander {
+  max-width: none; position: relative;
+  background: var(--honey-grad);
+}
+.commander::after {
+  content: ''; position: absolute; inset: 0; z-index: 0;
+  background: url('images/commander.jpg') center/cover no-repeat;
+}
+.commander::before { content: ''; position: absolute; inset: 0; z-index: 1; background: rgba(38,26,8,0.78); }
+.commander__inner { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; }
+.commander .eyebrow { color: var(--gold); }
+.commander .section__head h2, .commander .section__lead { color: var(--white); }
+.commander .section__lead a { color: var(--gold); }
+.form { background: var(--bg); padding: 2.4rem; border-radius: var(--radius); }
+.form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-bottom: 1.1rem; }
+.form__full { grid-column: 1 / -1; }
+.form label { display: flex; flex-direction: column; gap: 0.4rem; min-width: 0; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 500; }
+.form input, .form textarea, .form select {
+  width: 100%; box-sizing: border-box;
+  font-family: var(--sans); font-size: 0.95rem; padding: 0.7rem 0.85rem; border: 1px solid var(--line);
+  border-radius: var(--radius); background: var(--white); color: var(--ink); text-transform: none; letter-spacing: 0; font-weight: 300;
+}
+.form input:focus, .form textarea:focus, .form select:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,138,30,0.18); }
+.form textarea { margin-bottom: 1.3rem; resize: vertical; }
+.form__status { margin-top: 1rem; text-align: center; font-size: 0.9rem; min-height: 1.2em; }
+.form__status.ok { color: var(--green); }
+.form__status.err { color: #b14a3a; }
+
+/* ===== Pied de page ===== */
+.footer { background: var(--ink); color: #ddccab; padding: 4rem 1.5rem 2rem; }
+.footer__grid { max-width: var(--maxw); margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; }
+.footer__brand { font-family: var(--serif); font-size: 1.5rem; color: var(--white); margin-bottom: 0.5rem; }
+.footer__title { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
+.footer p { font-size: 0.9rem; margin-bottom: 0.3rem; }
+.footer a:hover { color: var(--gold); }
+.footer__bottom { max-width: var(--maxw); margin: 3rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.12); text-align: center; font-size: 0.8rem; color: #a8966f; }
+.footer__credit { margin-top: 0.4rem; }
+.footer__credit a { color: var(--gold); }
+.footer__credit a:hover { text-decoration: underline; }
+
+/* ===== Bouton flottant appel ===== */
+.fab {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 90;
+  width: 56px; height: 56px; border-radius: 50%; background: var(--gold);
+  display: none; align-items: center; justify-content: center; font-size: 1.4rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: transform 0.2s, background 0.2s;
+}
+.fab:hover { background: var(--gold-dark); transform: scale(1.08); }
+
+/* ===== Animations d'apparition ===== */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .histoire__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .histoire__media { min-height: 300px; }
+  .histoire__media img { min-height: 300px; }
+  .produits, .gallery { grid-template-columns: 1fr 1fr; }
+  .atouts { grid-template-columns: 1fr 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 760px) {
+  .nav__links {
+    position: fixed; top: 0; right: -100%; height: 100vh; width: 75%; max-width: 320px;
+    background: var(--bg); flex-direction: column; justify-content: center; gap: 2rem;
+    box-shadow: -8px 0 30px rgba(0,0,0,0.15); transition: right 0.35s ease; padding: 2rem;
+  }
+  .nav__links.open { right: 0; }
+  .nav__links a { color: var(--ink) !important; font-size: 1rem; }
+  .nav__burger { display: flex; z-index: 101; }
+  .hero::after { background-attachment: scroll; }
+  .produits, .gallery, .atouts { grid-template-columns: 1fr; }
+  .form { padding: 1.6rem; }
+  .form__grid { grid-template-columns: 1fr; gap: 0.8rem; }
+  .section { padding: 4rem 1.5rem; }
+  .strip { gap: 0.8rem; flex-direction: column; }
+  .fab { display: flex; }
+  .gallery img { height: 220px; }
+}
